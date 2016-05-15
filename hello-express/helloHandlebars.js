@@ -33,7 +33,7 @@ function ranNum(){
 }
 
 app.get('/rand',function (req,res) {
-  res.render('rand', genContext());
+  res.render('rand', ranNum());
 });
 
 app.use(function(req,res){
