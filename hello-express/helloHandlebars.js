@@ -26,6 +26,16 @@ app.get('/time',function(req,res){
   res.render('time', genContext());
 });
 
+function ranNum(){
+  var numb = {};
+  numb.rand = Math.random();
+  return numb;
+}
+
+app.get('rand',function (req,res) {
+  res.render('rand', genContext());
+});
+
 app.use(function(req,res){
   res.status(404);
   res.render('404');
