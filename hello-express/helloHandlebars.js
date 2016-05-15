@@ -32,7 +32,7 @@ function ranNum(){
   return numb;
 }
 
-app.get('rand',function (req,res) {
+app.get('/rand',function (req,res) {
   res.render('rand', genContext());
 });
 
